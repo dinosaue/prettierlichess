@@ -114,9 +114,8 @@ body,
 .tabs-horiz,
 .lobby__counters,
 .lobby__streams .stream,
-.timeline,
 .lobby__about a,
-.timeline .entry a,
+.entry a,
 .lobby__box__top .title,
 .lobby__box .user-link,
 .tour-spotlight,
@@ -171,7 +170,6 @@ optgroup,
 select,
 textarea,
 .lobby__streams .more,
-.timeline .more,
 .puzzle__side__metas .hidden,
 .studies .study li,
 .studies .study .top span,
@@ -213,7 +211,7 @@ rm6 .message::before,
 .activity .line a,
 .hooks__chart .label,
 #hook .opponent {
-    color: var(--textColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 /* General */
@@ -245,14 +243,14 @@ main {
 
 .user-link.online .line,
 .is-green::before,
-good,
-a.user-link:hover {
+good
+/* a.user-link:hover { */ {
     color: var(--primaryColor) !important;
 }
 
 html a,
 html a:hover {
-    color: var(--primaryColor);
+    color: var(#3692e7);
 }
 
 bad {
@@ -260,10 +258,10 @@ bad {
 }
 
 .utitle {
-    color: var(--secondaryColor) !important;
+    color: var(#bf811d) !important;
 }
 
-.button {
+/* .button {
     font-family: 'Red Hat Text', sans-serif !important;
     font-weight: 500 !important;
     background: var(--primaryColor) !important;
@@ -275,13 +273,13 @@ bad {
     padding: 10px 14px !important;
     text-transform: lowercase !important;
     transition: all .2s ease-in-out !important;
-}
+} */
 
-.button:hover {
+/* .button:hover {
     background: none !important;
-    color: var(--primaryColor) !important;
+    color: var(#3692e7) !important;
     box-shadow: 0 0 0 1px var(--primaryColor) inset !important;
-}
+} */
 
 .button.button-empty {
     background: none !important;
@@ -541,34 +539,34 @@ cg-container .cg-shapes {
     opacity: .8 !important;
 }
 
-square.last-move {
+/* square.last-move {
     background: var(--lastMove) !important;
     opacity: .4 !important;
-}
+} */
 
-square.premove-dest {
+/* square.premove-dest {
     background: radial-gradient(var(--preMove) 19%, rgba(0, 0, 0, 0) 20%) !important;
     opacity: .8 !important;
-}
+} */
 
-square.oc.premove-dest {
+/* square.oc.premove-dest {
     background: radial-gradient(transparent 0%, transparent 79%, var(--preMove) 80%) !important;
-}
+} */
 
 
-square.move-dest {
+/* square.move-dest {
     background: radial-gradient(var(--moveIndicator) 19%, rgba(0, 0, 0, 0) 20%) !important;
     opacity: .8 !important;
-}
+} */
 
-square.oc.move-dest {
+/* square.oc.move-dest {
     background: radial-gradient(transparent 0%, transparent 79%, var(--moveIndicator) 80%) !important;
-}
+} */
 
-cg-board square.current-premove {
+/* cg-board square.current-premove {
     background: var(--preMove) !important;
-    opacity: .25 !important;
-}
+    opacity: .25 !important; 
+} */ 
 
 /* Selects Default Arrow */
 
@@ -652,7 +650,7 @@ square.selected {
 }
 
 .site-title a {
-    color: var(--primaryColor) !important;
+    color: var(--textColor) !important;
 }
 
 .site-title span {
@@ -729,10 +727,12 @@ nav section a:target-within {
     transition: all .2s ease-in-out !important;
 }
 
+/*change the top nav highlight color*/ 
+
 #topnav div a:hover {
     background: var(--primaryColor) !important;
     border-radius: 0 !important;
-    color: var(--backgroundColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 #topnav.hover section:hover>a,
@@ -774,7 +774,7 @@ nav section a:target-within {
 
 #dasher_app .logout button.text:hover {
     background: var(--tertiaryColor) !important;
-    color: var(--backgroundColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 #dasher_app .links a:hover,
@@ -782,7 +782,7 @@ nav section a:target-within {
 #dasher_app .links button:hover,
 #dasher_app .subs .sub:hover {
     background: var(--primaryColor) !important;
-    color: var(--backgroundColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 #dasher_app .sub::before,
@@ -961,7 +961,7 @@ signal>i {
 }
 
 #topnav a[href='/patron']::after {
-    color: var(--secondaryColor) !important;
+    color: var(#3692e7) !important;
 }
 
 /* Homepage */
@@ -1084,8 +1084,8 @@ main.lobby {
 }
 
 .tabs-horiz {
-    background: var(--surfaceColor) !important;
-    border-bottom: 2px solid var(--surfaceColorHover) !important;
+    background: var(#d64f00) !important;
+    border-bottom: 2px solid var(#d64f00) !important;
     border-radius: 0 !important;
 }
 
@@ -1101,11 +1101,11 @@ main.lobby {
 .tabs-horiz span.active,
 .lobby__box td.name a:hover,
 .lobby__app .gamesFiltered {
-    color: var(--primaryColor) !important;
+    color: var(#d64f00) !important;
 }
 
 .tabs-horiz span::after {
-    background: var(--primaryColor) !important;
+    background: var(#d64f00) !important;
 }
 
 .lobby__app__content,
@@ -1117,7 +1117,7 @@ main.lobby {
 
 .lobby__spotlights,
 .lobby__streams {
-    border-bottom: 2px solid var(--surfaceColorHover) !important;
+    border-bottom: 2px solid var(#bf811d) !important;
 }
 
 .tour-spotlight {
@@ -1144,10 +1144,14 @@ main.lobby {
     background: none !important;
 }
 
-.timeline .entry:hover a,
-.hooks__chart .plot.rated,
-.lobby__app .toggle:hover {
+.entry:hover a,
+.hooks__chart .plot.rated
+{
     color: var(--primaryColor) !important;
+}
+
+.lobby__app .toggle:hover {
+    color: var(#d64f00) !important;
 }
 
 .hooks__chart {
@@ -1178,7 +1182,7 @@ main.lobby {
 }
 
 .lobby__streams .stream.highlight strong {
-    color: var(--secondaryColor) !important;
+    color: var( #bf811d) !important;
     margin-bottom: 8px !important;
 }
 
@@ -1338,9 +1342,9 @@ a.button.button-metal:hover {
     border-radius: var(--borderRadius) var(--borderRadius) 0 0 !important;
 }
 
-#friend_box .content a.user-link .line::before {
+/* #friend_box .content a.user-link .line::before {
     color: var(--primaryColor) !important;
-}
+} */
 
 #friend_box .content div:hover {
     background: var(--surfaceColorHover) !important;
@@ -1393,7 +1397,7 @@ a.button.button-metal:hover {
 }
 
 .mini-game__clock.clock--run {
-    color: var(--secondaryColor) !important;
+    color: var(#d64f00) !important;
 }
 
 #modal-wrap,
@@ -1439,9 +1443,9 @@ a.button.button-metal:hover {
     background: none !important;
 }
 
-group.radio label {
+/* group.radio label {
     background: var(--backgroundColor) !important;
-}
+} */
 
 group.radio {
     box-shadow: none !important;
@@ -1654,8 +1658,7 @@ button.rematch-decline::before {
 }
 
 .fbt:hover:not(.disabled):not([disabled]),
-.puzzle__session a.result-true,
-.puzzle__feedback.after .continue,
+/* .puzzle__session a.result-true, */
 .puzzle__vote .vote:hover,
 .puzzle__vote .vote.active {
     background: var(--primaryColor) !important;
@@ -1663,14 +1666,14 @@ button.rematch-decline::before {
 }
 
 .puzzle__vote .vote.vote-down:hover,
-.puzzle__vote .vote.vote-down.active,
-.puzzle__session a.result-false {
+.puzzle__vote .vote.vote-down.active
+/* .puzzle__session a.result-false { */
+{
     background: var(--tertiaryColor) !important;
     color: var(--backgroundColor) !important;
 }
 
 .puzzle__side__streak__info h1,
-.puzzle__side__streak__score,
 .puzzle__vote .vote,
 .puzzle__feedback.good .icon,
 .puzzle__feedback .win .icon,
@@ -1686,10 +1689,10 @@ button.rematch-decline::before {
     margin-right: 20px !important;
 }
 
-.puzzle__session a.current {
+/* .puzzle__session a.current {
     background: var(--secondaryColor) !important;
     color: var(--backgroundColor) !important;
-}
+} */
 
 .puzzle__feedback.after .continue i::before {
     font-size: 1.5em !important;
@@ -2359,7 +2362,7 @@ a.context-streamer:hover {
 }
 
 .pv_box .pv[data-uci] .pv-san:hover {
-    color: var(--textColor) !important;
+    color: var(--secondaryColor) !important;
 }
 
 /* Analysis Graph */
@@ -2407,7 +2410,6 @@ path[fill="none"][stroke="black"] {
     stroke-opacity: 0 !important;
 }
 
-path[stroke="#707070"],
 path[stroke="#b2b1b6"] {
     stroke: var(--surfaceColorHover) !important;
 }
@@ -2465,18 +2467,6 @@ path[fill="url(#highcharts-7)"] {
 .gamebook .feedback.end a:hover {
     background: var(--surfaceColorHover) !important;
     padding: 12px !important;
-}
-
-.study__chapters {
-    overflow: overlay !important;
-}
-
-.study__chapters::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 10px 10px var(--backgroundColor) !important;
-}
-
-.study__chapters::-webkit-scrollbar-thumb {
-    box-shadow: inset 0 0 10px 10px var(--primaryColor) !important;
 }
 
 .floor::after {
@@ -2710,19 +2700,21 @@ a.analyse {
     padding: 0 10px !important;
 }
 
-.studies .study .top::before,
+/* .studies .study .top::before,
 .studies .study .top .study-name {
     color: var(--defaultWhite) !important;
     opacity: .7 !important;
-}
+} */
 
-.study-index .box__top>*,
-.study-index .box__top .search .button {
+.study-index .box__top>*
+/* .study-index .box__top .search .button { */
+{
     margin: 0 0 0 5px !important;
 }
 
-.study-index .box__top .new-study .button,
-.study-index .box__top .search .button {
+.study-index .box__top .new-study .button
+/* .study-index .box__top .search .button { */
+{
     padding: 0 1em !important;
 }
 
@@ -2784,23 +2776,23 @@ a.analyse {
     border: 0 !important;
 }
 
-.activity section h2 time,
+/* .activity section h2 time,
 .sub-ratings strong {
     background: none !important;
     color: var(--secondaryColor) !important;
-}
+} */
 
-.activity .entry>i {
+/* .activity .entry>i {
     border: none !important;
     background: var(--secondaryColor) !important;
     color: var(--backgroundColor) !important;
     margin-left: -80px !important;
     margin-top: -12px !important;
-}
+} */
 
-.activity .entries {
+/* .activity .entries {
     border-left: 2px solid var(--secondaryColor) !important;
-}
+} */
 
 .activity win strong,
 .data-count::after,
@@ -2808,17 +2800,17 @@ a.analyse {
 .button.active,
 .btn-rack__btn.active {
     background: var(--primaryColor) !important;
-    color: var(--backgroundColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 .activity loss strong {
     background: var(--tertiaryColor) !important;
-    color: var(--backgroundColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 .activity draw strong {
-    background: var(--secondaryColor) !important;
-    color: var(--backgroundColor) !important;
+    background: var(#bf811d) !important;
+    color: var(#FFFFFF) !important;
 }
 
 .page-menu__content.box {
@@ -2854,7 +2846,7 @@ a.analyse {
 #us_profile,
 .perf-stat .counter tr:first-child,
 .perf-stat .result thead tr {
-    border-bottom: 2px solid var(--surfaceColorHover) !important;
+    border-bottom: 2px solid var(--surfaceColor) !important;
 }
 
 #us_profile .profile-side {
@@ -2862,17 +2854,17 @@ a.analyse {
 }
 
 #us_profile .insight {
-    color: var(--primaryColor) !important;
+    color: var(#3692e7) !important;
 }
 
 #us_profile .insight:hover::before {
     background: none !important;
-    color: var(--backgroundColor) !important;
+    color: var(#FFFFFF) !important;
 }
 
 #us_profile .insight:hover {
-    background: var(--primaryColor) !important;
-    color: var(--backgroundColor) !important;
+    background: var(#3692e7) !important;
+    color: var(#FFFFFF) !important;
 }
 
 .user-show .angles {
@@ -2929,13 +2921,13 @@ path[stroke="#404040"],
     stroke: var(--surfaceColorHover) !important;
 }
 
-rect[fill="#505053"] {
+/* rect[fill="#505053"] {
     fill: var(--surfaceColorHover) !important;
 }
 
 rect[fill="#000003"] {
     fill: var(--primaryColor) !important;
-}
+} */
 
 .highcharts-button text,
 .highcharts-axis-labels text {
@@ -2953,10 +2945,7 @@ hr {
     background: var(--surfaceColorHover) !important;
 }
 
-.fire-trophy,
 .trophy.streaming,
-.trophy.patron,
-.trophy.patron:hover,
 .crosstable__users,
 .crosstable__score,
 .crosstable povs:hover,
@@ -3371,7 +3360,7 @@ iframe.analyse {
 
 /* Practice */
 
-.practice-side,
+/* .practice-side,
 .practice__side {
     background: var(--surfaceColor) !important;
     border: 2px solid var(--surfaceColorHover) !important;
@@ -3439,7 +3428,7 @@ iframe.analyse {
 .ps__chapter .status {
     color: var(--defaultWhite) !important;
     opacity: .5 !important;
-}
+} */
 
 /* Coordinate Trainer */
 
@@ -3449,7 +3438,7 @@ iframe.analyse {
 
 /* Learn */
 
-.learn__side-home,
+/* .learn__side-home,
 .learn-stages .stage,
 .learn__table .wrap,
 .learn__side-map,
@@ -3477,7 +3466,7 @@ iframe.analyse {
 .learn__side-map .stage.done img,
 .learn__screen .buttons .next,
 .learn__table .result.completed {
-    background: var(--primaryColor) !important;
+    background: var(--secondaryColor) !important;
     color: var(--backgroundColor) !important;
 }
 
@@ -3491,7 +3480,7 @@ iframe.analyse {
 }
 
 .learn__table .result.failed {
-    background: var(--tertiaryColor) !important;
+    background: var(--secondaryColor) !important;
     color: var(--backgroundColor) !important;
 }
 
@@ -3548,7 +3537,7 @@ iframe.analyse {
 
 .learn__table .goal {
     border-bottom: 1px solid var(--surfaceColorHover) !important;
-}
+} */
 
 /* Preferences */
 
